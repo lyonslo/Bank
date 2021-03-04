@@ -21,4 +21,17 @@ class BankAccount{
             previousTransaction=-amount;
         }
     }
+    void getPreviousTransaction(){
+        if(previousTransaction>0){
+            System.out.println("Deposited"+previousTransaction);
+        }
+        else if (previousTransaction<0){
+            System.out.println("提取"+Math.abs(previousTransaction));
+        }else {
+            System.out.println("没有交易发生");
+        }
+    }
+    void showMenu(){
+
+    }
 }
